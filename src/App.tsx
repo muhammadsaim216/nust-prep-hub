@@ -16,6 +16,9 @@ import TestResult from "./pages/TestResult";
 import Analytics from "./pages/Analytics";
 import Bookmarks from "./pages/Bookmarks";
 import Profile from "./pages/Profile";
+import AdminContent from "./pages/admin/AdminContent";
+import AdminUsers from "./pages/admin/AdminUsers";
+import AdminStats from "./pages/admin/AdminStats";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -45,6 +48,9 @@ const App = () => (
             <Route path="/analytics" element={<AppLayout><Analytics /></AppLayout>} />
             <Route path="/bookmarks" element={<AppLayout><Bookmarks /></AppLayout>} />
             <Route path="/profile" element={<AppLayout><Profile /></AppLayout>} />
+            <Route path="/admin/content" element={<AppLayout><AdminContent /></AppLayout>} />
+            <Route path="/admin/users" element={<AppLayout><AdminUsers /></AppLayout>} />
+            <Route path="/admin/stats" element={<AppLayout><AdminStats /></AppLayout>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
