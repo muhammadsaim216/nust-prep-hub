@@ -15,6 +15,7 @@ import TestAttempt from "./pages/TestAttempt";
 import TestResult from "./pages/TestResult";
 import Analytics from "./pages/Analytics";
 import Bookmarks from "./pages/Bookmarks";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/tests/:testId/result/:attemptId" element={<AppLayout><TestResult /></AppLayout>} />
             <Route path="/analytics" element={<AppLayout><Analytics /></AppLayout>} />
             <Route path="/bookmarks" element={<AppLayout><Bookmarks /></AppLayout>} />
+            <Route path="/profile" element={<AppLayout><Profile /></AppLayout>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

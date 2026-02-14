@@ -29,6 +29,7 @@ import {
   Shield,
   Users,
   Database,
+  UserCircle,
 } from 'lucide-react';
 
 const mainNavItems = [
@@ -38,6 +39,7 @@ const mainNavItems = [
   { title: 'Mock Tests', url: '/tests', icon: ClipboardList },
   { title: 'Analytics', url: '/analytics', icon: BarChart3 },
   { title: 'Bookmarks', url: '/bookmarks', icon: Bookmark },
+  { title: 'Profile', url: '/profile', icon: UserCircle },
 ];
 
 const adminNavItems = [
